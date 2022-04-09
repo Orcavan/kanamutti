@@ -4070,7 +4070,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.System.Exps.random,
 		C3.Plugins.System.Acts.SetLayerVisible,
-		C3.Plugins.Touch.Cnds.OnDoubleTapGesture,
+		C3.Plugins.Touch.Cnds.OnTouchEnd,
 		C3.Plugins.Browser.Acts.RequestFullScreen,
 		C3.Plugins.Browser.Acts.LockOrientation,
 		C3.Plugins.Audio.Acts.Play,
@@ -4120,7 +4120,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.AddInstanceVar,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
-		C3.Plugins.Sprite.Acts.StartAnim
+		C3.Plugins.Sprite.Acts.StartAnim,
+		C3.Plugins.System.Cnds.OnLoadFinished
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4152,6 +4153,7 @@ self.C3_JsPropNameTable = [
 	{Sine: 0},
 	{Sine2: 0},
 	{touch_animated: 0},
+	{preLoading: 0},
 	{RewardsID: 0},
 	{LoadingValue: 0},
 	{layer_opacity: 0},
