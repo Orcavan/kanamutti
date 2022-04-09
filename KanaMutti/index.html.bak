@@ -6,6 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
 <meta name="generator" content="Construct 3">
+
+<!--Insert OG Markup -->
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Kana Mutti" />
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="කනාමුට්ටි Play කරලා Smart Watch එකක් දිනාගන්න" />
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://nilushangames.000webhostapp.com/kanamutti.jpeg" />
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://kanamutti.orcavan.net" />
+
+	
 	<meta name="author" content="Helacode Games">
 	<meta name="description" content="Kana Mutti">
 	<meta name="propeller" content="a93dd1aca002d7eadb4421e85d33286a">
@@ -14,6 +23,8 @@
 	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
 	<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
 	<link rel="icon" type="image/png" href="icons/icon-512.png">
+	
+	
 
 <link rel="stylesheet" href="style.css">
 
