@@ -4070,6 +4070,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Browser.Exps.Title,
 		C3.Plugins.Browser.Exps.UserAgent,
 		C3.Plugins.Browser.Exps.URL,
+		C3.Plugins.System.Cnds.Compare,
+		C3.Plugins.Browser.Acts.GoToURLWindow,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.System.Cnds.LayerVisible,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
@@ -4125,7 +4127,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.IsVisible,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
-		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.System.Exps.len,
 		C3.Plugins.TextBox.Exps.Text,
 		C3.Plugins.System.Cnds.Else,
@@ -4304,6 +4305,13 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "application/json",
 		() => "mydata.json",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0();
+		},
+		() => "https://l.facebook.com/",
+		() => "https://kanamuttihelacode.netlify.app/",
+		() => "NewWindow",
 		() => "alert",
 		() => "loadingbar",
 		p => {
