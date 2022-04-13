@@ -4058,19 +4058,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.SetVar,
-		C3.Plugins.Browser.Acts.InvokeDownloadString,
-		C3.Plugins.Browser.Exps.Domain,
-		C3.Plugins.Browser.Exps.Hash,
-		C3.Plugins.Browser.Exps.Language,
-		C3.Plugins.Browser.Exps.PathName,
-		C3.Plugins.Browser.Exps.Platform,
-		C3.Plugins.Browser.Exps.Port,
-		C3.Plugins.Browser.Exps.Protocol,
-		C3.Plugins.Browser.Exps.Referrer,
-		C3.Plugins.Browser.Exps.Title,
-		C3.Plugins.Browser.Exps.UserAgent,
-		C3.Plugins.Browser.Exps.URL,
 		C3.Plugins.System.Cnds.Compare,
+		C3.Plugins.Browser.Exps.Referrer,
 		C3.Plugins.Browser.Acts.GoToURLWindow,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.System.Cnds.LayerVisible,
@@ -4289,22 +4278,6 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => "loadingbar_conf",
 		() => 0,
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			const f1 = p._GetNode(1).GetBoundMethod();
-			const f2 = p._GetNode(2).GetBoundMethod();
-			const f3 = p._GetNode(3).GetBoundMethod();
-			const f4 = p._GetNode(4).GetBoundMethod();
-			const f5 = p._GetNode(5).GetBoundMethod();
-			const f6 = p._GetNode(6).GetBoundMethod();
-			const f7 = p._GetNode(7).GetBoundMethod();
-			const f8 = p._GetNode(8).GetBoundMethod();
-			const f9 = p._GetNode(9).GetBoundMethod();
-			const f10 = p._GetNode(10).GetBoundMethod();
-			return () => ((((((((((((((((((((((((((((((("Browsers Domain : " + f0()) + "\n") + "Browser Hash : ") + f1()) + "\n") + "Browsers Language : ") + f2()) + "\n") + "Browser PathName : ") + f3()) + "\n") + "Browsers Platform : ") + f4()) + "\n") + "Browser Port : ") + f5()) + "\n") + "Browsers Protocol : ") + f6()) + "\n") + "Browser Referrer : ") + f7()) + "\n") + "Browsers Title : ") + f8()) + "\n") + "Browser UserAgent : ") + f9()) + "\n") + "Browser URL : ") + f10());
-		},
-		() => "application/json",
-		() => "mydata.json",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
