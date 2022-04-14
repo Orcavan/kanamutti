@@ -4058,9 +4058,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.SetVar,
-		C3.Plugins.System.Cnds.Compare,
-		C3.Plugins.Browser.Exps.Referrer,
-		C3.Plugins.Browser.Acts.GoToURLWindow,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.System.Cnds.LayerVisible,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
@@ -4074,8 +4071,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Exps.random,
 		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.Touch.Cnds.OnTouchEnd,
-		C3.Plugins.Browser.Acts.RequestFullScreen,
-		C3.Plugins.Browser.Acts.LockOrientation,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Browser.Cnds.OnUpdateFound,
 		C3.Plugins.Browser.Acts.Alert,
@@ -4100,8 +4095,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AJAX.Exps.LastData,
 		C3.Plugins.System.Cnds.ForEach,
 		C3.Plugins.Arr.Exps.At,
-		C3.Plugins.Browser.Cnds.IsPortraitLandscape,
-		C3.Plugins.Browser.Cnds.IsFullscreen,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.Touch.Cnds.OnDoubleTapGestureObject,
@@ -4116,14 +4109,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.IsVisible,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
+		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.System.Exps.len,
 		C3.Plugins.TextBox.Exps.Text,
 		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.Sprite.Acts.AddInstanceVar,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
-		C3.Plugins.Sprite.Acts.StartAnim,
-		C3.Plugins.System.Cnds.OnLoadFinished
+		C3.Plugins.Sprite.Acts.StartAnim
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4278,20 +4271,13 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => "loadingbar_conf",
 		() => 0,
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0();
-		},
-		() => "https://l.facebook.com/",
-		() => "https://kanamuttihelacode.netlify.app/",
-		() => "NewWindow",
 		() => "alert",
 		() => "loadingbar",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
 		},
-		() => 904,
+		() => 552,
 		() => 2,
 		() => "loading",
 		() => "Entering the Game...",
@@ -4351,9 +4337,9 @@ self.C3_ExpressionFuncs = [
 		() => "ok_popup",
 		() => "Game",
 		() => "gender_toggler",
-		() => 800,
-		() => 344,
-		() => 488,
+		() => 492,
+		() => 600,
+		() => 236,
 		() => "Game-confis",
 		() => "tutorial",
 		() => "close_tutor",
